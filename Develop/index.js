@@ -1,8 +1,9 @@
 // TODO: Include packages needed for this application
 import inquirer from 'inquirer';
 import fs from 'fs';
+import generateMarkdown from './utils/generateMarkdown.js';
 
-const generateHTML = (answers) =>
+const generateHTML = (username, ) =>
     `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +35,7 @@ inquirer
         },
         {
             type: 'input',
-            name: 'project',
+            name: 'title',
             message: 'What is your project title?',
         },
         {
@@ -70,13 +71,13 @@ inquirer
         }
     ])
     .then((answers) => {
-        const htmlContent = generateHTML(answers);
-        fs.writeFile('index.html', htmlContent, (err) =>
-            err ? console.log(err) : console.log('Successfully created index.html!')
+        const markdownContent = generateMarkdown(answers);
+        fs.writeFile('README.md', markdownContent, (err) =>
+            err ? console.log(err) : console.log('Successfully created README.md!')
         );
     });
 
-    
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
