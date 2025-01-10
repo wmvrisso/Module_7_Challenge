@@ -1,6 +1,6 @@
-# Module_7_Challenge
+# test
 
-  ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 test
@@ -20,7 +20,7 @@ test
 test
 
 ## License
-APACHE 2.0
+MIT
 
 ## Contributing
 test
@@ -29,4 +29,4 @@ test
 test
 
 ## Questions
-If you have any questions, please contact me at wmvrisso@gmail.com.
+If you have any questions, please contact me at test.
